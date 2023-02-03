@@ -11,3 +11,6 @@ def recursos_humanos(request):
 @login_required(login_url='/admin')
 def authorized(request):
     return render(request, 'home/authorized.html', {})
+
+def home(request):
+    return render(request, 'home/index.html', {})
